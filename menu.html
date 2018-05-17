@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Yoshimatsu</title>
+        <link href="style/index.css" rel="stylesheet" type="text/css">
+        <link href="style/menu.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function() {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <span id="upstairs"></span>
+        <div class="grid">
+            <div id="navigation">
+                <img src="images/2741YoshiWtLogo.jpg" id="logo">
+                <h3 id="home"><a href="index.html">home</a></h3>
+                <h3 id="menu"><a href="menu.html">menu</a></h3>
+                <h3 id="info"><a href="info.html">info</a></h3>
+                <h3 id="contact"><a href="contact.html">contact</a></h3>
+            </div>
+        </div>
+        
+        <div id="jumper">
+            <h4><a href="#linktomain">• main menu</a></h4>
+            <h4><a href="#linktolunch">• lunch special menu</a></h4>
+            <h4><a href="#linktogluten">• gluten free menu</a></h4>
+            <h4><a href="#linktohappy">• happy hour menu</a></h4>
+            <h4><a href="#upstairs">• &uarr;</a>
+            </h4>
+        </div>
+        
+        <div class="menugrid">
+            
+            <div id="menu1">
+                
+                <h1 id="linktomain">Main Menu</h1>
+                
+                <div id="lunchmenimg">
+                    <img src="images/mainmenu/mmenu1.jpg">
+                </div>
+                
+                <div id="lunchmenimg">
+                    <img src="images/mainmenu/mmenu2.jpg">
+                </div>
+                
+                <div id="lunchmenimg">
+                    <img src="images/mainmenu/mmenu3.jpg">
+                </div>
+                
+                <div id="lunchmenimg">
+                    <img src="images/mainmenu/mmenu4.jpg">
+                </div>
+                
+                <div id="lunchmenimg">
+                    <img src="images/mainmenu/mmenu5.jpg">
+                </div>
+            
+            </div>
+            
+            <div id="menu2">
+                
+                <h1 id="linktolunch">Lunch Special Menu</h1>
+                
+                <div id="lunchmenimg">
+                    <img src="images/Lunch_Special2018__.jpg">
+                </div>
+                
+                <div id="lunchmenimg">
+                    <img src="images/Lunch_Special2018.jpg">
+                </div>
+            
+            </div>
+            
+            <div id="menu3">
+                
+                <h1 id="linktogluten">Gluten Free Menu</h1>
+                
+                <div id="lunchmenimg">
+                    <img src="images/GlutenFreeMenuMay18.jpg">
+                </div>
+            
+            </div>
+            
+            
+            <div id="menu4">
+                
+                <h1 id="linktohappy">Happy Hour Menu</h1>
+                
+                <div id="lunchmenimg">
+                    <img src="images/HappyHourDrink2018.jpg">
+                </div>
+            
+            </div>
+        </div>
+        
+        <!--<scipt src="js/menu.js"></scipt>-->
+    </body>
+</html>

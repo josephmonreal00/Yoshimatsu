@@ -1,0 +1,287 @@
+body, html {
+    background-color: white;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: 'Unica One', cursive;
+}
+
+.grid {
+    height: 100%;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+        "nav nav nav nav nav nav nav nav nav nav nav nav"
+        "hder hder hder hder hder hder hder hder hder hder hder hder";
+}
+
+
+/*•••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+
+
+
+#navigation{
+    margin: 0 0 0 0;
+    padding: 10px 0 10px 0;
+    background-color: #ffffff;
+    grid-area: nav;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        " . lgo lgo lgo hme hme men men ifo ifo cont cont";
+}
+
+#logo {
+    grid-area: lgo;
+    width: 200px;
+    margin: 10px 0 0 0;
+}
+
+h3>a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px; 
+    text-transform: uppercase;
+    font-size: 25px;
+    font-style: normal;
+}
+
+h3>a:hover {
+    color: #0bb50b;
+}
+
+
+#home {
+    grid-area: hme;
+}
+
+#menu {
+    grid-area: men;
+}
+
+#info {
+    grid-area: ifo; 
+}
+
+#contact {
+    grid-area: cont;
+}
+
+/**********/
+
+.info-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+        ". i1 i1 i1 i1 . dtion dtion dtion dtion dtion ."
+        ". . . . . . . . . . . ."
+        ". dtion1 dtion1 dtion1 dtion1 dtion1 . i2 i2 i2 i2 i2"
+        ". . . . . . . . . . . ."
+        ". i3 i3 i3 i3 . dtion2 dtion2 dtion2 dtion2 dtion2 ."
+        ". . . . . . . . . . . ."
+        ". menitems menitems menitems menitems menitems menitems menitems menitems menitems menitems ."
+        ". i4 i4 i4 i5 i5 i5 i5 i6 i6 i6 ."
+        ". i7 i7 i7 i8 i8 i8 i8 i9 i9 i9 ."
+        ". i10 i10 i10 i11 i11 i11 i11 i12 i12 i12 ."
+        ". i13 i13 i13 i14 i14 i14 i14 i15 i15 i15 ."
+        ". i16 i16 i16 i17 i17 i17 i17 i18 i18 i18 ."
+        ". . . . . . . . . . . .";
+    
+}
+
+#menu_items {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 50px 0 50px 0;
+    grid-area: menitems;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#menu_title {
+    font-size: 70px;
+}
+
+#menu_photo_title {
+    font-size: 35px;
+}
+
+#desc {
+    height: 550px;
+    width: 100%;
+    grid-area: dtion;
+    overflow: scroll;
+    line-height: 40px;
+}
+
+#desc_headings {
+    font-size: 40px;
+}
+
+#desc1 {
+    height: 550px;
+    width: 100%;
+    grid-area: dtion1;
+    margin: 0 100px 0 0;
+    line-height: 40px;
+}
+
+#desc2 {
+    height: 550px;
+    width: 100%;
+    grid-area: dtion2;
+    margin: 0 100px 0 0;
+}
+
+#desc3 {
+    height: 10px;
+    width: 100%;
+    grid-area: dtion3;
+    margin: 0 100px 0 0;
+}
+
+#desc4 {
+    height: 10px;
+    width: 100%;
+    grid-area: dtion4;
+    margin: 0 100px 0 0;
+}
+
+#desc5 {
+    height: 10px;
+    width: 100%;
+    grid-area: dtion5;
+    margin: 0 100px 0 0;
+}
+/*
+#desc6 {
+    height: 10px;
+    width: 100%;
+    grid-area: dtion6;
+    margin: 0 100px 0 0;
+}
+
+#desc7 {
+    height: 10px;
+    width: 100%;
+    grid-area: dtion7;
+    margin: 0 100px 0 0;
+}
+
+#desc8 {
+    height: 10px;
+    width: 100%;
+    grid-area: dtion8;
+    margin: 0 100px 0 0;
+}
+*/
+#desc3, #desc4, #desc5 {
+    text-align: center;
+}
+
+#texxt {
+    font-size: 20px;
+}
+
+#inf1 {
+    grid-area: i1;
+}
+
+#inf2 {
+    grid-area: i2;
+}
+
+#inf3 {
+    grid-area: i3;
+}
+
+#inf4 {
+    grid-area: i4;
+    height: 500px;
+}
+
+#inf5 {
+    grid-area: i5;
+    height: 500px;
+}
+
+#inf6 {
+    grid-area: i6;
+    height: 500px;
+}
+
+#inf7 {
+    grid-area: i7;
+    height: 500px;
+}
+
+#inf8 {
+    grid-area: i8;
+    height: 500px;
+}
+
+#inf9 {
+    grid-area: i9;
+    height: 500px;
+}
+
+#inf10 {
+    grid-area: i10;
+    height: 500px;
+}
+
+#inf11 {
+    grid-area: i11;
+    height: 500px;
+}
+
+#inf12 {
+    grid-area: i12;
+    height: 500px;
+}
+
+#inf13 {
+    grid-area: i13;
+    height: 500px;
+}
+
+#inf14 {
+    grid-area: i14;
+    height: 500px;
+}
+
+#inf15 {
+    grid-area: i15;
+    height: 500px;
+}
+
+#inf16 {
+    grid-area: i16;
+    height: 500px;
+}
+
+#inf17 {
+    grid-area: i17;
+    height: 500px;
+}
+
+#inf18 {
+    grid-area: i18;
+    height: 500px;
+}
+
+
+#inf1, #inf2{
+    height: 550px;
+    width: 500px;
+}
+
+div > div img {
+    height: 100%;
+    width: 100%;
+}
+
